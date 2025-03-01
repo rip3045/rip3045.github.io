@@ -1,0 +1,144 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f8f8; /* Slightly lighter gray */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #003d80;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: AntiqueWhite;
+    padding: 20px;
+    text-align: center;
+}
+
+header .tagline {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px 40px;
+}
+
+/* Section Dividers */
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Services Section */
+.services {
+    margin-bottom: 30px;
+}
+.services ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+/* About Section */
+.about {
+    margin-bottom: 30px;
+}
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.headshot {
+    flex: 0 0 150px;
+}
+.headshot img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.bio-text {
+    flex: 1;
+    font-size: 1rem;
+}
+
+/* Profiles Section */
+.profiles {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.profiles ul {
+    list-style: none;
+    padding: 0;
+}
+.profiles ul li {
+    display: inline;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact-info {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: AntiqueWhite;
+    text-align: center;
+    padding: 20px;
+}
+footer .logo img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+    .bio {
+        flex-direction: column;
+        align-items: center;
+    }
+    .headshot {
+        margin-bottom: 15px;
+    }
+}
